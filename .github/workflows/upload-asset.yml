@@ -1,0 +1,24 @@
+name: Upload uchi.zip as asset
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Zip
+        run: |
+          zip -r uchi-docker.zip src Dockerfile
+          mv src uchi
+          zip -r uchi.zip uchi
+      - name: Upload
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            uchi.zip
+            uchi-docker.zip
+          token: ${{ secrets.GITHUB_TOKEN }}

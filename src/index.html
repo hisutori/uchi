@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Uchi</title>
+        <meta name="description" content="A simple startpage." />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#8aafd7" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <link rel="icon" href="/img/favicons/favicon192.png" sizes="any" />
+        <link rel="icon" href="/img/favicons/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-startup-image" href="/img/favicons/favicon256.png" />
+
+        <script async src="/js/news.js"></script>
+        <script defer src="/js/worldclock.js"></script>
+        <script defer src="/js/search.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="/img/favicons/favicon.svg" title="Web" alt="Web" loading="lazy" />
+            <hgroup>
+                <h2><a href="/">Uchi</a> <small>v1.0.0</small></h2>
+                <p title="Welcome back!">おかえりなさい!</p>
+            </hgroup>
+        </header>
+        <nav>
+            <form action="https://duckduckgo.com">
+                <input type="text" name="q" placeholder="Search..." autofocus required />
+                <input type="submit" value=">" />
+                <br />
+                <input type="radio" id="all" name="ia" value="web" required checked />
+                <label for="all">all</label>
+                <input type="radio" id="images" name="ia" value="images" />
+                <label for="images">images</label>
+                <input type="radio" id="videos" name="ia" value="videos" />
+                <label for="videos">videos</label>
+                <input type="radio" id="news" name="ia" value="news" />
+                <label for="news">news</label>
+            </form>
+        </nav>
+        <main>
+            <section>
+                <ul></ul>
+            </section>
+            <section>
+                <ul>
+                    <li class="section-title">tech</li>
+                    <li><a href="https://news.ycombinator.com" rel="noreferrer">Hackernews</a></li>
+                    <li><a href="https://lobste.rs" rel="noreferrer">Lobsters</a></li>
+                    <li><a href="https://lwn.net" rel="noreferrer">LWN</a></li>
+                    <li><a href="https://www.phoronix.com" rel="noreferrer">Phoronix</a></li>
+                </ul>
+                <ul>
+                    <li class="section-title">messaging</li>
+                    <li><a href="https://discord.com" rel="noreferrer">Discord</a></li>
+                    <li><a href="https://web.telegram.org" rel="noreferrer">Telegram</a></li>
+                    <li><a href="https://web.whatsapp.com" rel="noreferrer">Whatsapp</a></li>
+                </ul>
+                <ul>
+                    <li class="section-title">news</li>
+                    <li><a href="https://apnews.com" rel="noreferrer">AP</a></li>
+                    <li><a href="https://www.reuters.com" rel="noreferrer">Reuters</a></li>
+                </ul>
+                <ul>
+                    <li class="section-title">entertainment</li>
+                    <li><a href="https://www.goodreads.com" rel="noreferrer">Goodreads</a></li>
+                    <li><a href="https://www.fandom.com" rel="noreferrer">Fandom</a></li>
+                    <li><a href="https://www.imdb.com" rel="noreferrer">IMDb</a></li>
+                </ul>
+                <ul>
+                    <li class="section-title">social</li>
+                    <li><a href="https://www.reddit.com" rel="noreferrer">Reddit</a></li>
+                    <li><a href="https://www.twitch.tv" rel="noreferrer">Twitch</a></li>
+                    <li><a href="https://x.com" rel="noreferrer">Twitter</a></li>
+                    <li><a href="https://youtu.be" rel="noreferrer">Youtube</a></li>
+                </ul>
+                <ul>
+                    <li class="section-title">worldclock</li>
+                    <li data-timezone="America/Los_Angeles"></li>
+                    <li data-timezone="America/New_York"></li>
+                    <li data-timezone="Europe/London"></li>
+                    <li data-timezone="Europe/Berlin"></li>
+                    <li data-timezone="Asia/Tokyo"></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <a href="/about.html">about</a>
+            <a href="https://github.com/hisutori/uchi" rel="noreferrer">github</a>
+            <a href="/disclaimer.html">disclaimer</a>
+            <a href="/privacy.html">privacy</a>
+        </footer>
+    </body>
+</html>
