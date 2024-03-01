@@ -1,4 +1,4 @@
-name: Upload uchi.zip as asset
+name: Upload uchi.zip and uchi-docker.zip as assets
 
 on:
   release:
